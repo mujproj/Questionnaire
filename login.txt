@@ -1,5 +1,4 @@
 ﻿
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,6 +28,6 @@
             <button type="submit">Login</button>
         </form>
        <form action="selection.html">
-         <input type="submit" value="go to selection page">
+         <input type="submit" value="go to">
 </form>
     </div>
