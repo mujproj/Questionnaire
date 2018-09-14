@@ -1,0 +1,15 @@
+<?php
+   $con = mysqli_connect("localhost","root","","QUESTIONARRE")or die(mysqli_error($con));
+   session_start();
+   $email = mysqli_real_escape_string($con,$_POST['emailid']);
+   $first_name = mysqli_real_escape_string($con,$_POST['FIRST NAME']);
+   $last_name = mysqli_real_escape_string($con,$_POST['LAST NAME']);
+   $teacher_id = $_POST['id'];
+   $passwd = $_POST['password'];
+   $user_SignUp_query = "insert into users(FIRSTNAME,LASTNAME,EMAILID,TEACHERID,PASSWORD) values ('$first_name','$last_name','$email','$teacher_id','$password')";
+   die($user_SignUp_query);
+   $user_SignUp_submit = mysqli_query($con,&user_SignUp_query) or die(mysqli_error($con));
+   echo "USER HAS SUCCESSFULLY INSERTED";
+   $_SESSION['emailid']=$email;
+   $_SESSION['id']=mysqli_insert_id($con);
+?>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+	 .container {
+          width: 1000px;
+          margin-left:500px;
+		 }  
+	 button {
+          background-color: #4CAF50;
+	 }
+    </style>
+</head>
+<body>
+ <center>
+  <img width="300" src="http://www.gcecglobal.com/wp-content/uploads/2017/07/MUJ-New-Logo-min.jpg" alt="" >
+   <h1>SIGN UP PAGE</h1>
+    <div>
+     <h3>Manipal University Jaipur</h3>
+     <p>Global Leadership in Higher Education and Human Development</p>
+    </div>
+	<div class="container">
+     <div class="row">
+      <div class="col-xs-4">
+       <form action="Sign_up.php" method="post">
+        <label>FIRST NAME:</label>
+        <input type="text" name="FIRST NAME" placeholder="ENTER YOUR FIRST NAME" id="username" required class="form-control">
+        <label>LAST NAME:</label>
+        <input type="text" name="LAST NAME" placeholder="ENTER YOUR LAST NAME" id="lastname" required class="form-control">
+        <label>EMAIL ID</label>
+		<input type="email" name="emailid" placeholder="ENTER YOUR EMAIL ID" id="emailid" required class="form-control" pattern="[^ @]*@[^ @]*">
+        <label>TEACHER ID</label>
+        <input type="text" name="id" placeholder="ENTER YOUR ID" required class="form-control">		
+        <span>
+         <label>PASSWORD</label>
+         <input type="password" name="password" placeholder="ENTER YOUR PASSWORD" id="password"	required class="form-control" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">	 
+	     <label>RENTER FOR YOUR CONFIRMATION</label>
+		 <input type="password" name="password" placeholder="ENTER YOUR PASSWORD" id="password"	required class="form-control" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+		</span>
+		<br>
+        <input type="submit" value="SIGN UP" class="btn btn-primary">		
+       </form>
+      </div>
+     </div>
+    </div>	 
+ </center>
+</body>
+</html> 

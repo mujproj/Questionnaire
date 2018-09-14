@@ -6,24 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login Page</title>
     <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
     <img width="300" src="http://www.gcecglobal.com/wp-content/uploads/2017/07/MUJ-New-Logo-min.jpg" alt="" >
     <h1>LOGIN PAGE</h1>
-
     <div>
         <h3>Manipal University Jaipur</h3>
         <p>Global Leadership in Higher Education and Human Development</p>
     </div>
-
-    <div>
-        <form action="" method="post">
+    <div class="container">
+     <div class="row">
+      <div class="col-xs-4">
+        <form action="login_page.php" method="post">
             <label for="username">Username:</label>
-            <input type="text" name="username" id="username" required placeholder="Enter Your Username">
+            <input type="text" name="username" id="username" required placeholder="Enter Your Username" class="form-control">
             <p></p>
             <label for="password">Password:</label>
-            <input type="password" name="password" id="password" required placeholder="Enter Your Password">
+            <input type="password" name="password" id="password" required placeholder="Enter Your Password" class="form-control" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
             <p></p>
             <button type="submit">Login</button>
         </form>
+      </div>
+     </div>
     </div>
+</body>
+</html>

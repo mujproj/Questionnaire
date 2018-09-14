@@ -1,0 +1,20 @@
+<?php 
+  $conn=mysqli_connect("localhost","root","","QUESTIONARRE")or die(mysqli_error($conn));
+  session_start();
+  $username=$_POST['username'];
+  $regrexname="";
+  if(!preg_match($regrexname,$username))
+  {
+	  echo "INCORRECT USERNAME";
+  }
+  $password=$_POST['password'];
+  $dummypassword="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}";
+  if(!preg_match($dummypassword,&password))
+  {
+	  echo "INCORRECT PASSWORD";
+  }
+ $username = mysqli_real_escape_string($conn,$username);
+ $password = mysqli_real_escape_string($conn,$password);
+ $_SESSION['username]=$username;
+ $_SESSION['password']=$password';
+ ?>
