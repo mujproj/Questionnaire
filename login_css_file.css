@@ -22,32 +22,16 @@ p
     text-align: center;
 }
 
-div
+#card
 {
+    padding: 2% 0 2% 0;
     width: 50%;
     margin: 0 auto;
-}
-
-#first
-{
     background-color: beige;
     border: 5px solid black;
-    border-bottom-color: beige;
-}
-
-#second
-{
-    background-color: beige;
-    border: 5px solid black;
-    border-bottom-color: beige;
-    border-top-color: beige;
-}
-
-#third
-{
-    background-color: beige;
-    border: 5px solid black;
-    border-top-color: beige;
+    border-bottom-color:  black;
+    width: 50%;
+    margin: 0 auto;
 }
 
 .logo
